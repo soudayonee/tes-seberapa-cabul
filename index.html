@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes seberapa cabul kamu</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./site-profile.jpg" type="image/jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tes seberapa sifat cabul kamu! Temukan persentase cabulmu dan jika lebih dari 95%, bersiaplah untuk kejutan yang membuatmu introspeksi diri."
+    />
+    <meta
+      name="keywords"
+      content="tes cabul, tes sifat, kuis cabul, persentase cabul, introspeksi diri, kuis online"
+    />
+    <meta property="og:title" content="Tes Seberapa Cabul Kamu" />
+    <meta
+      property="og:description"
+      content="Uji seberapa sifat cabul yang kamu miliki. Lebih dari 95%? Ada kejutan yang membuatmu introspeksi!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tes-cabul.vercel.app" />
+    <meta
+      property="og:image"
+      content="https://tes-cabul.vercel.app/site-profile.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tes Seberapa Cabul Kamu" />
+    <meta
+      name="twitter:description"
+      content="Uji seberapa sifat cabul yang kamu miliki. Lebih dari 95%? Ada kejutan yang membuatmu introspeksi!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://tes-cabul.vercel.app/site-profile.jpg"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <div class="main-container">
+        <div class="header-text">
+          <h1 class="title">Tes seberapa cabul kamu</h1>
+          <h2 class="subtitle">Kami semua berharap kamu adalah orang baik</h2>
+        </div>
+
+        <div class="input-container">
+          <input
+            class="input-text"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Masukkan nama kamu"
+            autocapitalize="words"
+          />
+          <button class="validation-button" id="result">Cek sekarang!</button>
+        </div>
+
+        <div class="result-container">
+          <h2 class="result-title">
+            Hasil Tes Nama: <br /><span class="result-name"></span>
+          </h2>
+          <h3 class="result-description"></h3>
+          <div class="result-wrapper">
+            <div class="donut-wrapper">
+              <svg width="220" height="220">
+                <circle class="donut-bg" cx="110" cy="110" r="90" />
+                <circle class="donut-fill" cx="110" cy="110" r="90" />
+              </svg>
+
+              <div class="donut-center" id="percentText">0%</div>
+            </div>
+
+            <img src="" alt="" id="resultGif" class="result-gif" />
+          </div>
+
+          <button id="reset">Cek Ulang</button>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Created by
+          <a
+            href="http://naufaladityayahya.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Naufal AY</a
+          >
+          &copy; 2025
+        </p>
+      </footer>
+    </div>
+
+    <div class="bad-result">
+      <h1 class="bad-title">Apakah Kamu Ingin Benar Benar Melihat Hasilnya?</h1>
+      <button id="seeResult">Ya, Tampilkan Hasilnya</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
